@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>瓶子的Bloxd小站</title>
+    <link rel="icon" href="https://imgur.la/images/2024/07/20/1721466051210.th.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://imgur.la/images/2024/07/20/1721466051210.th.png" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('https://imgur.la/images/2024/07/21/1721570147120.png');
+            background-attachment: fixed; /* 背景图片不随页面滚动而滚动 */
+            background-size: cover; /* 背景图片覆盖整个页面 */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header-title {
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            font-size: 32px;
+            font-weight: bold;
+            position: relative;
+            z-index: 100;
+        }
+        .profile-card {
+            background-color: rgba(0,0,0,0.5);
+            width: 280px;
+            height: 54px;
+            border-radius: 4px;
+            margin: 20px auto 0;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .profile-image {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .profile-name {
+            color: white;
+            font-weight: bold;
+        }
+        .profile-remark {
+            font-size: 12px;
+            color: #ccc;
+        }
+        .bilibili-button {
+            background-color: rgba:(0,0,0,0);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            margin-left: auto;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .tools-card {
+            background-color: rgba(0,0,0,0.5);
+            width: 280px;
+            margin: 20px auto 0;
+            border-radius: 4px;
+        }
+        .tools-table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .tools-table td {
+            width: 50%;
+            padding: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .tools-image {
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tools-description {
+            font-size: 14px;
+            color: white;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <h5 class="header-title">瓶子的小站</h5>
+
+<div class="profile-card">
+    <img src="https://imgur.la/images/2024/07/20/172139004046399976ce484749db940de0bb0f434041e2037dfda.png" alt="头像" class="profile-image">
+    <div class="profile-details">
+        <div class="profile-name">麦块瓶子</div>
+        <div class="profile-remark">前往 Bilibili个人主页</div>
+    </div>
+    <a href="https://m.bilibili.com/space/1220943493" class="bilibili-button"><b>GO!</b></a>
+</div>
+
+<div class="tools-card">
+    <table class="tools-table">
+        <tr>
+            <td onclick="window.open('https://bloxd.io/?lobby=pingzi&g=worlds');">
+                <img src="https://imgur.la/images/2024/07/21/f070ccd77f2440b8a58100e906e981e7.th.png" alt="图片1" class="tools-image">
+                <div class="tools-description">进入瓶服</div>
+            </td>
+            <td onclick="window.open('https://my.cbox.ws/bloxdcn');">
+                <img src="https://imgur.la/images/2024/07/21/ecd9449cca4e4692a0dae083df64fba0.th.png" alt="图片2" class="tools-image">
+                <div class="tools-description">游戏聊天室</div>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://my.cbox.ws/corn186');">
+                <img src="https://imgur.la/images/2024/07/21/ecd9449cca4e4692a0dae083df64fba0.th.png" alt="图片3" class="tools-image">
+                <div class="tools-description">瓶子の小窝</div>
+            </td>
+            <td onclick="window.open('particles.html');">
+                <img src="https://imgur.la/images/2024/07/21/c7c58df17ba849b5ad5b61e15c0e1f1c.th.png" alt="图片4" class="tools-image">
+                <div class="tools-description">炸裂粒子</div>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://imgur.la/login');">
+                <img src="https://imgur.la/images/2024/07/21/bf21033dd07049b5958674ae91848e71.th.png" alt="图片5" class="tools-image">
+                <div class="tools-description">图床推荐</div>
+            </td>
+            <td onclick="window.open('onphone.html');">
+                <img src="https://imgur.la/images/2024/07/21/bb5fc9892a414d67a174b056f1e450d9.th.png" alt="图片6" class="tools-image">
+                <div class="tools-description">手机教程</div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
