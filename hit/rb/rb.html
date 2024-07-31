@@ -7,6 +7,7 @@
 <title>痛扁RB喵！</title>
 <style>
   .image-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +15,17 @@
     overflow: hidden; /* 防止图片超出屏幕 */
   }
   img {
+    padding: 50% 0;
+    text-align: center;
     max-width: 100%;
     max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     cursor: pointer; /* 鼠标悬停时显示指针手势 */
+  }
+  .hidden {
+    opacity: 0; /* 隐藏图片2 */
   }
 </style>
 <script>
@@ -32,21 +41,20 @@
     // 阻止默认的触摸行为，例如滚动
     event.preventDefault();
 
-    var image = document.getElementById('switchImage');
-
     if (isPressed) {
       // 如果已经处于按下状态，则不做任何操作
       return;
     }
 
-    // 切换到图片2
-    image.src = 'https://iili.io/duhIsNR.md.png';
     // 播放声音
-    if (!sound.paused) {
-        sound.pause(); // 暂停当前播放的声音
-        sound.currentTime = 0;
-      }
-      sound.play();
+    sound.play();
+
+    // 切换图片显示状态
+    var image1 = document.getElementById('image1');
+    var image2 = document.getElementById('image2');
+    image1.classList.add('hidden');
+    image2.classList.remove('hidden');
+
     // 更新状态
     isPressed = true;
   }
@@ -57,9 +65,12 @@
       return;
     }
 
-    // 切换回图片1
-    var image = document.getElementById('switchImage');
-    image.src = 'https://iili.io/duhTBf9.md.png';
+    // 恢复图片显示状态
+    var image1 = document.getElementById('image1');
+    var image2 = document.getElementById('image2');
+    image1.classList.remove('hidden');
+    image2.classList.add('hidden');
+
     // 更新状态
     isPressed = false;
   }
@@ -75,7 +86,8 @@
 
 可定制~需提供图片和声音UwU
 <div class="image-container">
-  <img id="switchImage" src="img1.png" alt="RB喵~">
+  <img id="image1" src="https://iili.io/duhTBf9.md.png" alt="死气沉沉RB喵~">
+  <img id="image2" src="https://iili.io/duhIsNR.md.png" class="hidden" alt="生龙活虎RB喵~">
 </div>
 
 </body>
