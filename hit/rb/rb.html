@@ -20,6 +20,25 @@
   }
 </style>
 <script>
+// 禁用右键菜单// 禁用右键菜单// 禁用右键菜单// 禁用右键菜单// 禁用右键菜单
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 禁用长按菜单
+        document.addEventListener('touchstart', function(e) {
+            if (e.touches.length > 1) {
+                e.preventDefault();
+            }
+        });
+
+        // 禁用长按触发的右键菜单
+        document.addEventListener('touchend', function(e) {
+            if (e.touches.length > 0) {
+                e.preventDefault();
+            }
+        });
+  
   var isPressed = false;
   var sound = new Audio('sound1.mp3');
 
