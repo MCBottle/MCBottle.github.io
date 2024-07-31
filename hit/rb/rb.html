@@ -16,12 +16,12 @@
   img {
     max-width: 100%;
     max-height: 100%;
-    cursor: pointer; /* 鼠标悬停时显示指针手势 */
+    cursor: pointer;
   }
 </style>
 <script>
   var isPressed = false;
-  var sound = new Audio('sound1.m4a');
+  var sound = new Audio('sound1.mp3');
 
   // 允许声音重叠播放
   sound.addEventListener('ended', function() {
@@ -29,7 +29,7 @@
   });
 
   function handlePress(event) {
-    // 阻止默认的触摸行为，例如滚动
+    // 阻止默认的触摸行为
     event.preventDefault();
 
     var image = document.getElementById('switchImage');
@@ -40,7 +40,7 @@
     }
 
     // 切换到图片2
-    image.src = 'img2.png';
+    image.src = '/MCBottle/mcbottle.github.io/edit/main/hit/rb/img2.png';
     // 播放声音
     if (!sound.paused) {
         sound.pause(); // 暂停当前播放的声音
@@ -59,7 +59,7 @@
 
     // 切换回图片1
     var image = document.getElementById('switchImage');
-    image.src = 'img1.png';
+    image.src = '/MCBottle/mcbottle.github.io/edit/main/hit/rb/img1.png';
     // 更新状态
     isPressed = false;
   }
