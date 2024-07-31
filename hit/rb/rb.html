@@ -47,6 +47,10 @@
     }
 
     // 播放声音
+    if (!sound.paused) {
+        sound.pause(); // 暂停当前播放的声音
+        sound.currentTime = 0;
+      }
     sound.play();
 
     // 切换图片显示状态
