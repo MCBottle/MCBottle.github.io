@@ -13,10 +13,14 @@
       return;
     }
   
-    
+    clickcount = clickcount + 1;
     var listcount = (clickcount - 1) % soundslist.length;
     var sound = new Audio(soundslist[listcount])
-    clickcount = clickcount + 1;
+    
+
+    console.log(listcount);
+    console.log(clickcount);
+    console.log(sound);
     // 播放声音
     if (!sound.paused) {
         sound.pause(); // 暂停当前播放的声音
