@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--哪个帅哥美女会闲着没事偷看我这神经病用KimiAi写的潮吧代码啊，别盗代码喵~-->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="icon" href="icon.png" type="image/png">
+<title>痛扁RB喵！</title>
+<style>
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* 防止图片超出屏幕 */
+  }
+  img {
+    padding: 50% 0;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer; /* 鼠标悬停时显示指针手势 */
+  }
+  .hidden {
+    opacity: 0; /* 隐藏图片2 */
+  }
+</style>
+<script>
+  //赋值音效库
+  var soundslist = [
+  'cat2.mp4',
+  'cat2.mp4',
+  'cat3.mp4',
+  'cat2.mp4',
+  'cat5.mp4',
+  'cat4.mp4',
+  
+  'cat2.mp4',
+  'cat2.mp4',
+  'cat3.mp4',
+  'cat2.mp4',
+  'cat6.mp4',
+  'cat5.mp4',
+  
+  'cat2.mp4',
+  'cat2.mp4',
+  'cat7.mp4',
+  'cat6.mp4',
+  'cat5.mp4',
+  'cat4.mp4',
+  'cat3.mp4',
+  
+  'cat6.mp4',
+  'cat6.mp4',
+  'cat5.mp4',
+  'cat2.mp4',
+  'cat3.mp4',
+  'cat2.mp4'
+  ];
+  
+  //加载外部JavaScript文件
+  var script = document.createElement('script');
+  script.src = "2.js";
+  //使用random.js(随机)或2.js(顺序)
+  document.head.appendChild(script);
+</script>
+</head>
+<body>
+
+<div class="image-container">
+  <img id="image1" src="https://iili.io/duhTBf9.md.png" alt="死气沉沉RB喵~">
+  <img id="image2" src="https://iili.io/duhIsNR.md.png" class="hidden" alt="生龙活虎RB喵~">
+</div>
+
+</body>
+</html>
