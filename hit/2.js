@@ -13,7 +13,7 @@
       return;
     }
   
-    clickcount = clickcount + 1;
+    
     var listcount = (clickcount - 1) % soundslist.length;
     var sound = new Audio(soundslist[listcount])
     
@@ -23,7 +23,7 @@
         sound.currentTime = 0;
       }
     sound.play();
-
+    clickcount = clickcount + 1;
     // 切换图片显示状态
     var image1 = document.getElementById('image1');
     var image2 = document.getElementById('image2');
