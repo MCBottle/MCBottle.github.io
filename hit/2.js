@@ -16,14 +16,14 @@
     
     var listcount = (clickcount - 1) % soundslist.length;
     var sound = new Audio(soundslist[listcount])
-    
+    clickcount = clickcount + 1;
     // 播放声音
     if (!sound.paused) {
         sound.pause(); // 暂停当前播放的声音
         sound.currentTime = 0;
       }
     sound.play();
-    clickcount = clickcount + 1;
+    
     // 切换图片显示状态
     var image1 = document.getElementById('image1');
     var image2 = document.getElementById('image2');
