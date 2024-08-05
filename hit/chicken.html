@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--哪个帅哥美女会闲着没事偷看我这神经病用KimiAi写的潮吧代码啊，别盗代码喵~-->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="icon" href="https://imgur.la/images/2024/08/05/1722858957553.th.png" type="image/png">
+<title>闻鸡🐔起舞</title>
+<style>
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* 防止图片超出屏幕 */
+  }
+  img {
+    padding: 50% 0;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer; /* 鼠标悬停时显示指针手势 */
+  }
+  .hidden {
+    opacity: 0; /* 隐藏图片2 */
+  }
+</style>
+<script>
+  //赋值音效库
+  var soundslist = [
+  'sounds/chicken/chicken1.mp3',
+  'sounds/chicken/chicken2.mp3',
+  'sounds/chicken/chicken3.mp3'
+  ];
+  
+  //加载外部JavaScript文件
+  var script = document.createElement('script');
+  script.src = "random.js";
+  //使用random.js(随机)或2.js(顺序)
+  document.head.appendChild(script);
+</script>
+</head>
+<body>
+
+<div class="image-container">
+  <img id="image1" src="https://imgur.la/images/2024/08/05/1722858951621.md.png" alt="活鸡">
+  <img id="image2" src="https://imgur.la/images/2024/08/05/1722858957553.md.png" class="hidden" alt="死鸡">
+</div>
+
+</body>
+</html>
